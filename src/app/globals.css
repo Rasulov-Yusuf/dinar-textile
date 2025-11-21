@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-archivo: archivo;
+  --font-inter: inter;
+  --color-bg: #f7f7f7;
+  --color-black: #111;
+  --color-yellow: #C7A263;
+  --tracking-wide: 2.2px;
+}
+
+
+
+html,
+body {
+  font-family: inter, sans-serif;
+  background-color: #f7f7f7;
+}
+
+
+.container {
+  width: min(100% - 32px, 1232px);
+  margin-inline: auto;
+}
