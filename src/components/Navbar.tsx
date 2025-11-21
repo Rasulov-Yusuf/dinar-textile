@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav>
+    <nav className="fixed w-full z-50">
       <div className="container">
         <div className="bg-white p-4 rounded-b-2xl flex items-center justify-between">
           <div>
             <Logo />
           </div>
 
-          <ul className="flex items-center gap-2 sm:gap-4 md:gap-[26px]">
+          <ul className="hidden lg:flex items-center gap-2 sm:gap-4 md:gap-[26px]">
             {
               links.map((link)=>{
                 return (

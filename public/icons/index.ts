@@ -1,0 +1,1 @@
+export {default as instagram} from './insta.svg'
