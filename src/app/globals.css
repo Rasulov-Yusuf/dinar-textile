@@ -5,11 +5,9 @@
   --font-inter: inter;
   --color-bg: #f7f7f7;
   --color-black: #111;
-  --color-yellow: #C7A263;
+  --color-yellow: #c7a263;
   --tracking-wide: 2.2px;
 }
-
-
 
 html,
 body {
@@ -17,8 +15,44 @@ body {
   background-color: #f7f7f7;
 }
 
-
 .container {
   width: min(100% - 32px, 1232px);
   margin-inline: auto;
+}
+
+.testimonials::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #f7f7f7, rgba(247, 247, 247, 0));
+  width: 131px;
+  height: 100%;
+}
+
+.testimonials::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(60deg, rgba(247, 247, 247, 0), rgba(247, 247, 247, 1));
+  width: 131px;
+  height: 100%;
+}
+
+@keyframes animate-testimons {
+  from {
+    translate: 0%;
+  }
+  to {
+    translate: -100%;
+  }
+}
+
+.tesha {
+  animation: animate-testimons 20s linear backwards infinite;
+}
+
+.tesha:hover{
+  animation-play-state: paused;
 }
