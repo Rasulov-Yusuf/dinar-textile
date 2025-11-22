@@ -1,7 +1,9 @@
+import { HeroBanner } from "@/components";
+
 export default function page() {
   return (
-    <div>
-      Factories page
-    </div>
+    <>
+      <HeroBanner>Fabrikalar</HeroBanner>
+    </>
   )
 }

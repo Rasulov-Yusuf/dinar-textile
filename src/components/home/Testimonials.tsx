@@ -9,7 +9,7 @@ export default function Testimonials() {
         <h2 className="mb-6 text-center font-archivo font-medium leading-[140%] text-2xl">Bizning hamkorlar</h2>
       </div>
       <div className="overflow-hidden relative testimonials">
-        <div className="tesha flex gap-[100px]" area-hidden={true}>
+        <div className="tesha flex gap-[100px]" area-hidden='true'>
           <ul className="flex items-center gap-[100px]">
             {arr.map((item) => (
               <li
