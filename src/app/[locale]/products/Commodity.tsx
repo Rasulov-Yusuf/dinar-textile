@@ -1,6 +1,4 @@
 "use client";
-import React from 'react'
-import Image from 'next/image';
 import { useState } from "react";
 import Link from 'next/link';
 
@@ -45,7 +43,7 @@ export default function Commodity() {
 
 
   return (
-    <div className='text-black max-w-[1580px] font-[Archivo] mx-auto py-9 md:px-30'>
+    <div className='text-black font-archivo mx-auto py-9 md:px-30'>
       <div className='flex justify-between items-center'>
         <h1 className=' text-2xl font-semibold font-[Archivo] sm:text-[40px]'>Mahsulotlarimiz</h1>
         <select
@@ -53,7 +51,7 @@ export default function Commodity() {
           onChange={(e) => setSelected(e.target.value)}
           className=" bg-white border-0 border-white text-sm   rounded-xl  py-3 px-3 sm:text-lg sm:py-5 sm:px-6  text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
         >
-          <option value="" disabled>
+          <option value="ayollar" disabled>
             Ayollar
           </option>
           <option value="option1">Ayollar</option>
@@ -77,9 +75,6 @@ export default function Commodity() {
           </Link>
         ))}
       </div>
-
-
-
     </div>
   )
 }

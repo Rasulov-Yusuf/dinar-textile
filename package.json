@@ -9,15 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.5",
-=======
     "@radix-ui/react-slot": "^1.2.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
->>>>>>> 789ac7b1df299e91958abba42feca9fb7a29871c
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "leaflet": "^1.9.4",
@@ -27,13 +24,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
-<<<<<<< HEAD
-    "react-is": "^18.3.1",
-    "react-leaflet": "^5.0.0"
-=======
     "react-leaflet": "^5.0.0",
     "tailwind-merge": "^3.4.0"
->>>>>>> 789ac7b1df299e91958abba42feca9fb7a29871c
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
