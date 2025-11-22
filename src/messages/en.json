@@ -5,6 +5,19 @@
 
   "AboutPage": {},
 
+  "Product" : {
+       "title" : "Products",
+       "title-product" : "Categories",
+       "product-item" : "Yarn products",
+       "product-items" : "Raw Fabric",
+       "Our-products" : "Our products",
+       "select-girl" : "Women",
+       "select-man" : "Men",
+       "products-number" : 4142 ,
+       "product-size" : "ML XL XXL",
+       "product-color" : "Red"
+  },
+
   "ServicesPage": {},
 
   "ContactPage": {},

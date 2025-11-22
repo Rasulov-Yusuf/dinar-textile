@@ -5,6 +5,19 @@
 
   "AboutPage": {},
 
+   "Product" : {
+       "title" : "Mahsulotlar",
+       "title-product" : "Kategoriyalar",
+       "product-item" : "Ip mahsulotlar",
+       "product-items" : "Xom Mato",
+       "Our-products" : "Mahsulotlarimiz",
+       "select-girl" : "Ayollar",
+       "select-man" : "Erkaklar",
+       "products-number" : 4142 ,
+       "product-size" : "ML XL XXL",
+       "product-color" : "Qizil"
+  },
+
   "ServicesPage": {},
 
   "ContactPage": {},
