@@ -5,19 +5,6 @@
 
   "AboutPage": {},
 
-   "Product" : {
-       "title" : "Продукты",
-       "title-product" : "Категории",
-       "product-item" : "Изделия из пряжи",
-       "product-items" : "Необработанная ткань",
-       "Our-products" : "Наши продукты",
-       "select-girl" : "Женщины",
-       "select-man" : "Мужчины",
-       "products-number" : 4142 ,
-       "product-size" : "ML XL XXL",
-       "product-color" : "Красный"
-  },
-
   "ServicesPage": {},
 
   "ContactPage": {},

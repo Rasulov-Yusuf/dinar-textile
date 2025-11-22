@@ -1,5 +1,8 @@
 import Image from "next/image";
-import { instagram, youtube, facebook, logo } from "../../public/icons";
+import instagram from '../../public/icons/insta.svg';
+import facebook from '../../public/icons/facebook.svg'
+import youtube from '../../public/icons/youtube.svg'
+import logo from '../../public/icons/logo-white.png'
 
 import { links } from "@/asstes/data";
 import Link from "next/link";
