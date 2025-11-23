@@ -15,3 +15,9 @@ export {default as AboutComponent } from './company/AboutComponent';
 export {default as CompanyStatistics } from './company/CompanyStatistics';
 export {default as CompanyMission } from './company/CompanyMission';
 export {default as CompanySertificates } from './company/CompanySertificates';
+
+// Products
+export {default as ProductsCategory } from './products/ProductsCategory';
+export {default as FilterByGen } from './products/FilterByGen';
+export {default as Commodity } from './products/Commodity';
+export {default as ProductsColor } from './products/ProductsColor';
