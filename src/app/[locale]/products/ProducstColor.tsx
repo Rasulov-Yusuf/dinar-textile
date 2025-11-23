@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react'
 
 export default function ProducstColor() {
@@ -58,17 +57,15 @@ export default function ProducstColor() {
 
 
     return (
-        <div className='font-[Archivo] max-w-[1580px] mx-auto  md:px-30 flex justify-center items-center flex-wrap gap-4'>
+        <div className='font-[Archivo] container mx-auto  flex justify-center items-center flex-wrap gap-4'>
             {Color.map((item, index) => {
                 return (
-                    <Link href={'/'}>
                         <div key={index}>
                             <div
                                 className='min-h-[140px] min-w-[296px] rounded-2xl border border-[#DDDDDD] inset-shadow-sm inset-shadow-{item.color} '
                                 style={{ backgroundColor: item.color }}></div>
                             <p className='text-center text-[20px] py-3 font-medium'>{item.model}</p>
                         </div>
-                    </Link>
                 );
             })}
         </div>
