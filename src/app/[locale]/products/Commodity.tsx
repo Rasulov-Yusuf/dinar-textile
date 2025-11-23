@@ -43,9 +43,9 @@ export default function Commodity() {
 
 
   return (
-    <div className='text-black font-archivo mx-auto py-9 md:px-30'>
+    <div className='container font-archivo mx-auto py-9 '>
       <div className='flex justify-between items-center'>
-        <h1 className=' text-2xl font-semibold font-[Archivo] sm:text-[40px]'>Mahsulotlarimiz</h1>
+        <h1 className=' text-2xl font-semibold font-archivo sm:text-[40px]'>Mahsulotlarimiz</h1>
         <select
           value={selected}
           onChange={(e) => setSelected(e.target.value)}
@@ -63,14 +63,14 @@ export default function Commodity() {
 
       <div className="flex justify-center items-center flex-wrap py-5 gap-3 sm:gap-4">
         {product.map((item, index) => (
-          <Link href={'/'}>
+          <Link href={'/products/id'}>
             <div key={index} className="  p-0 sm:p-4 rounded-xl hover:bg-white transition-all">
               <div>
-                <img className='w-[150px] h-[180px]  sm:min-h-[450px] sm:min-w-[370px]  ' src="/images/girl.png" alt="" />
+                <img className='w-[150px] h-[180px]  sm:min-h-[440px] sm:min-w-[350px]  ' src="/images/girl.png" alt="" />
               </div>
               <p className=" text-lg sm:text-2xl py-3 font-medium text-center">{item.number}</p>
-              <p className="text-[14px] sm:text-[16px] text-[#9F9F9F] text-center">{item.text}</p>
-              <p className="text-[12px] sm:text-[14px] py-1 text-[#9F9F9F] text-center">{item.color}</p>
+              <p className="text-xs sm:text-sm text-[#9F9F9F] text-center">{item.text}</p>
+              <p className="text-xs sm:text-sm py-1 text-[#9F9F9F] text-center">{item.color}</p>
             </div>
           </Link>
         ))}

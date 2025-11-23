@@ -4,10 +4,10 @@ import Image from 'next/image'
 
 export default function Categories() {
     return (
-        <div className='text-black max-w-[1580px] mx-auto  md:px-30'>
-            <h1 className='text-[40px] font-semibold font-[Archivo] text-center py-6 md:text-left md:align-baseline'>Kategoriyalar</h1>
-            <div className='flex items-center gap-[18px] justify-center  flex-wrap'>
-                <div className="w-full min-h-[380px] relative  rounded-2xl  bg-[url('/icons/ipak.svg')] bg-cover bg-center bg-no-repeat sm:w-[656px] sm:min-h-[550px] ">
+        <div className='container  mx-auto'>
+            <h1 className=' fon font-semibold font-archivo text-center py-6 md:text-left md:align-baseline'>Kategoriyalar</h1>
+            <div className='flex items-center gap-3 justify-center  flex-wrap'>
+                <div className="w-full min-h-[380px] relative  rounded-2xl  bg-[url('/icons/ipak.svg')] bg-cover bg-center bg-no-repeat sm:w-[600px] sm:min-h-[530px] ">
                     <Link href="/" className="absolute bottom-4 left-4 right-4 px-4">
                         <div className="bg-white  px-5 py-4  rounded-2xl flex justify-between items-center shadow sm:px-8 sm:py-4 ">
                             <p className="text-[20px] font-medium">Ip mahsulotlar</p>
@@ -23,7 +23,7 @@ export default function Categories() {
                         </div>
                     </Link>
                 </div>
-                 <div className="w-full min-h-[380px] relative  rounded-2xl  bg-[url('/images/mato.png')] bg-cover bg-center bg-no-repeat sm:w-[656px] sm:min-h-[550px] ">
+                 <div className="w-full min-h-[380px] relative  rounded-2xl  bg-[url('/images/mato.png')] bg-cover bg-center bg-no-repeat sm:w-[600px] sm:min-h-[530px] ">
                     <Link href="/" className="absolute bottom-4 left-4 right-4 px-4">
                         <div className="bg-white  px-5 py-4  rounded-2xl flex justify-between items-center shadow sm:px-8 sm:py-4 ">
                             <p className="text-[20px] font-medium">Xom Mato</p>

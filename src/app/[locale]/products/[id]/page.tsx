@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function page() {
   return (
     <div>
-      <div className='h-full sm:h-screen font-[Archivo] flex items-center flex-wrap justify-center gap-0 sm:gap-4 '>
+      <div className='h-full sm:h-screen font-archivo flex items-center flex-wrap justify-center gap-0 sm:gap-4 '>
         <div>
           <Image
             src="/images/Speeds.png"
@@ -20,8 +20,8 @@ export default function page() {
           <h1 className='text-[40px] font-semibold mb-4'>Birrangli top yuqori yoqali</h1>
           <div>
             <p className='text-lg mb-2'>4142</p>
-            <p className='text-sm text-[#9F9F9F] mb-2'>ML XL XXL</p>
-            <p className='text-sm text-[#9F9F9F] mb-4'>Red</p>
+            <p className='text-sm rings mb-2'>ML XL XXL</p>
+            <p className='text-sm rings mb-4'>Red</p>
           </div>
           <p className='flex flex-wrap mb-9  w-[100%]  sm:w-[400px]  text-lg leading-9'> Birrangli top yuqori yoqali
             Yumshoq cho'zilgan mikrofiberdan yengsiz yoqali, qovurg'ali ayollar to'pi. Maxsus choksiz texnologiya mahsulotni tanaga mukammal moslashtirishga imkon beradi, yarim qo'shni siluet qomatni ta'kidlaydi.
@@ -39,7 +39,7 @@ export default function page() {
       <div className="w-full h-full md:h-full py-0  sm:py-10 p-0 sm:px-4">
         <div className="  w-[100%] sm:max-w-7xl mx-auto bg-white rounded-0 sm:rounded-xl gap-7 p-10 flex flex-wrap justify-between ">
 
-          <h1 className="text-[40px] font-semibold font-[Archivo] mb-8">Buyurtma</h1>
+          <h1 className="fon font-semibold font-archivo mb-8">Buyurtma</h1>
           <div>
             <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
