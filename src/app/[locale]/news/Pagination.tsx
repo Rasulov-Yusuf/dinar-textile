@@ -7,7 +7,7 @@ export default function BasicPagination() {
         <div className='flex items-center justify-center p-4'>
             <Stack spacing={2}>
                 <Pagination
-                    sx={{color : "#CD333A"}}
+                    sx={{color : "#CD333A" , background:"#CD333A"}}
                     count={5} />
             </Stack>
         </div>
