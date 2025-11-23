@@ -67,6 +67,8 @@ body {
   animation: animate-testimons 20s linear backwards infinite;
 }
 
+.spacing-4 { margin-bottom: 62px; }
+
 .tesha:hover{
   animation-play-state: paused;
 }

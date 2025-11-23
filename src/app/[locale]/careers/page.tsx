@@ -49,17 +49,17 @@ export default function page() {
       <div className='container flex items-center flex-wrap gap-4 justify-center py-9 font-archivo'>
         {Vacancies.map((item, index) => {
           return (
-              <div key={index} className='bg-white rounded-2xl p-6 w-full  sm:w-[32%] sm:h-1/2'>
-                <div className=' flex items-center gap-2 mb-4'>
-                  <h1 className='text-2xl font-medium '>{item.name}</h1>
-                  <img src={"/icons/Frame.svg"} alt='Hello' />
-                </div>
-                <p className='leading-8 mb-15 text-base'>{item.description}</p>
-
-                <Link href={'/'}>
-                  <button className=' border-2 p-3.5 px-9 border-black  sm:p-3 sm:px-9 text-lg rounded-[95px]'>Ariza topshirish</button>
-                </Link>
+            <div key={index} className='bg-white rounded-2xl p-6 w-full  sm:w-[32%] sm:h-1/2'>
+              <div className=' flex items-center gap-2 mb-4'>
+                <h1 className='text-2xl font-medium '>{item.name}</h1>
+                <img src={"/icons/Frame.svg"} alt='Hello' />
               </div>
+              <p className='leading-8 spacing-4 text-base'>{item.description}</p>
+
+              <Link href={'/'}>
+                <button className=' border-2 p-3 px-7 border-black  sm:p-3 sm:px-9 text-lg rounded-[95px]'>Ariza topshirish</button>
+              </Link>
+            </div>
           )
         })
         }
