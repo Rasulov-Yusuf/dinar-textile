@@ -9,3 +9,9 @@ export {default as News } from './home/News';
 export {default as Exports } from './home/Exports';
 export {default as Techs } from './home/Techs';
 export {default as CareerComponent } from './home/CareerComponent';
+
+// About page
+export {default as AboutComponent } from './company/AboutComponent';
+export {default as CompanyStatistics } from './company/CompanyStatistics';
+export {default as CompanyMission } from './company/CompanyMission';
+export {default as CompanySertificates } from './company/CompanySertificates';
