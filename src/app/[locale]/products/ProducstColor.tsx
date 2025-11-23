@@ -60,7 +60,12 @@ export default function ProducstColor() {
         <div className='font-[Archivo] container mx-auto  flex justify-center items-center flex-wrap gap-4'>
             {Color.map((item, index) => {
                 return (
+<<<<<<< HEAD
                         <div key={index}>
+=======
+                    <Link href={'/'}>
+                        <div key={index + +new Date()}>
+>>>>>>> 34b595b (news component)
                             <div
                                 className='min-h-[140px] min-w-[296px] rounded-2xl border border-[#DDDDDD] inset-shadow-sm inset-shadow-{item.color} '
                                 style={{ backgroundColor: item.color }}></div>

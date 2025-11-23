@@ -1,8 +1,10 @@
-import React from 'react'
 import Categories from "./Categories";
 import Commodity from './Commodity';
 import ProducstColor from './ProducstColor';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 34b595b (news component)
 
 export default function page() {
   return (

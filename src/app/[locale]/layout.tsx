@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Archivo, Inter } from "next/font/google";
-
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";

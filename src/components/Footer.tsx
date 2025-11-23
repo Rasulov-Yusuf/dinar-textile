@@ -8,7 +8,7 @@ import { links } from "@/asstes/data";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <footer className="bg-yellow text-white pt-[30px]">
+    <footer className="bg-red text-white pt-[30px]">
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between gap-5">
           <div className="flex flex-col justify-between grow gap-4">
@@ -17,15 +17,15 @@ export default function Footer() {
             </div>
 
             <div className="flex gap-5 md:gap-x-10 lg:gap-x-24 flex-wrap">
-              <ul className="flex flex-col gap-[10px]">
+              <ul className="flex flex-col gap-2.5">
                 <li className="opacity-60">Telefon</li>
                 <li>+998 (71) 231 86 01</li>
               </ul>
-              <ul className="flex flex-col gap-[10px]">
+              <ul className="flex flex-col gap-2.5">
                 <li className="opacity-60">Manzil</li>
                 <li>Toshkent shahridagi, Amir Temur ko'chasi, 45-uy.</li>
               </ul>
-              <ul className="flex flex-col gap-[10px]">
+              <ul className="flex flex-col gap-2.5">
                 <li className="opacity-60">Elektron manzil</li>
                 <li>info@dinar.uz</li>
               </ul>
