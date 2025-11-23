@@ -1,3 +1,7 @@
+import React from 'react'
+import Map from '../shared/Map'
+import { Button } from '../ui/button'
+
 export default function Position() {
   return (
     <section id='position' className='mt-[100px]'>

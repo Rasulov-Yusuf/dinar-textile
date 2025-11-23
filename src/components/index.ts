@@ -6,3 +6,6 @@ export {default as HeroBanner } from './shared/HeroPattern';
 export {default as About } from './home/About';
 export {default as Products } from './home/Products';
 export {default as News } from './home/News';
+export {default as Exports } from './home/Exports';
+export {default as Techs } from './home/Techs';
+export {default as CareerComponent } from './home/CareerComponent';

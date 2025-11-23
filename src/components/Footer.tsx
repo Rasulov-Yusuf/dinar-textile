@@ -8,7 +8,7 @@ import { links } from "@/asstes/data";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <footer className="bg-red text-white pt-[30px]">
+    <footer className="bg-red text-white pt-[30px] mt-[100px]">
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between gap-5">
           <div className="flex flex-col justify-between grow gap-4">

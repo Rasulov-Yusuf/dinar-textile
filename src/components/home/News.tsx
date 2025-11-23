@@ -8,13 +8,11 @@ import NewsCard from "../shared/NewsCard";
 export default function News() {
   const [ref, slider] = useKeenSlider<HTMLDivElement>({
     slides: {
-      perView: 2.3,
-      spacing: 10,
+      perView: 2.2,
+      spacing: 16,
     },
     loop: true,
   });
-
-  const slideCount = 0;
 
   return (
     <section id="news-section" className="mt-[100px]">
@@ -24,41 +22,44 @@ export default function News() {
             <h2 className="font-semibold font-archivo leading-[140%] tracking-[-1%] text-3xl md:text-4xl lg:text-[40px]">
               Yangiliklar
             </h2>
-            <Button className="rounded-full bg-transparent text-black border cursor-pointer hover:text-white hover:bg-red">
-              <Link href={"/news"} className="flex items-center gap-1">
-                Barchasi <ChevronRight />
+            <div>
+              <Link
+                href={"/"}
+                className="flex items-center py-3 px-5 cursor-pointer border rounded-full border-black hover:bg-red hover:text-white hover:border-white duration-300"
+              >
+                Barchasi <ChevronRight size={20} />
               </Link>
-            </Button>
+            </div>
           </div>
 
           <div className="flex items-center gap-2">
             <Button
               onClick={() => slider.current?.prev()}
-              className="rounded-full bg-white text-black cursor-pointer hover:text-white hover:bg-red px-7!"
+              className="rounded-full bg-white text-black cursor-pointer hover:text-white hover:bg-red px-7! py-5!"
             >
               <ChevronLeft className="size-6" />
             </Button>
 
             <Button
               onClick={() => slider.current?.next()}
-              className="rounded-full bg-white text-black cursor-pointer hover:text-white hover:bg-red px-7!"
+              className="rounded-full bg-white text-black cursor-pointer hover:text-white hover:bg-red px-7! py-5!"
             >
               <ChevronRight className="size-6" />
             </Button>
           </div>
         </div>
 
-        <div ref={ref} className="keen-slider">
-          <div className="keen-slider__slide number-slide1">
+        <div ref={ref} className="keen-slider mt-6">
+          <div className="keen-slider__slide">
             <NewsCard />
           </div>
-          <div className="keen-slider__slide number-slide2">
+          <div className="keen-slider__slide">
             <NewsCard />
           </div>
-          <div className="keen-slider__slide number-slide3">
+          <div className="keen-slider__slide">
             <NewsCard />
           </div>
-          <div className="keen-slider__slide number-slide4">
+          <div className="keen-slider__slide">
             <NewsCard />
           </div>
         </div>
