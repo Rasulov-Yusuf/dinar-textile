@@ -3,7 +3,8 @@ import { Archivo, Inter } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { Navbar, Footer } from "@/components";
+import { Navbar, Footer, Header } from "@/components";
+import Sidebar from "@/components/shared/Sidebar";
 
 const archivo = Archivo({
   variable: "--font-roboto",
@@ -34,9 +35,11 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${archivo.variable} ${inter.variable} antialiased min-h-screen flex flex-col`}>
+      <body
+        className={`${archivo.variable} ${inter.variable} antialiased min-h-screen flex flex-col`}
+      >
         <NextIntlClientProvider>
-          <Navbar/>
+          <Header />
           <main className="grow">{children}</main>
           <Footer />
         </NextIntlClientProvider>

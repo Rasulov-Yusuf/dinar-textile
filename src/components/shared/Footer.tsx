@@ -1,11 +1,13 @@
 import Image from "next/image";
-import instagram from '../../public/icons/insta.svg';
-import facebook from '../../public/icons/facebook.svg'
-import youtube from '../../public/icons/youtube.svg'
-import logo from '../../public/icons/logo-white.png'
+import Link from "next/link";
+import instagram from "@/../public/icons/insta.svg";
+import facebook from "@/../public/icons/facebook.svg";
+import youtube from "@/../public/icons/youtube.svg";
+import logo from "@/../public/icons/logo-white.png";
+
 
 import { links } from "@/asstes/data";
-import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-red text-white pt-[30px] mt-[100px]">
