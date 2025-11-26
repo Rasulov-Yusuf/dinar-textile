@@ -1,11 +1,27 @@
-import { Hero, Testimonials, About } from "@/components";
+import {
+  Hero,
+  Testimonials,
+  About,
+  Products,
+  News,
+  Exports,
+  Techs,
+  CareerComponent,
+  Position
+} from "@/components";
 
 export default function HomePage() {
   return (
     <>
-      <Hero/>
-      <Testimonials/>
-      <About/>
+      <Hero />
+      <Testimonials />
+      <About />
+      <Products />
+      <News />
+      <Exports />
+      <Techs />
+      <CareerComponent />
+      <Position />
     </>
   );
 }

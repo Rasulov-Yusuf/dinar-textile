@@ -11,22 +11,13 @@
   --color-black: #111;
   --color-yellow: #c7a263;
   --color-red: rgba(205, 51, 58, 1);
+  --radius-fn: 15px;
 }
-
 
 html,
 body {
   font-family: inter, sans-serif;
   background-color: #f7f7f7;
-}
-
-.fon{
-  font-size: 40px;
-  font-family: archivo;
-}
-
-.rings{
-  color: #9F9F9F;
 }
 
 .container {
@@ -66,8 +57,6 @@ body {
 .tesha {
   animation: animate-testimons 20s linear backwards infinite;
 }
-
-.spacing-4 { margin-bottom: 62px; }
 
 .tesha:hover{
   animation-play-state: paused;
