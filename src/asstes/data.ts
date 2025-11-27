@@ -9,11 +9,11 @@ export const links = [
         link: 'Kompaniya',
         url: '/company'
     },
-    // {
-    //     id: 3,
-    //     link: 'Fabrikalar',
-    //     url: '/factories'
-    // },
+    {
+        id: 3,
+        link: 'Fabrikalar',
+        url: '/factories'
+    },
     {
         id: 4,
         link: 'Mahsulotlar',
@@ -41,7 +41,6 @@ export const links = [
     },
 ];
 
-<<<<<<< HEAD
 
 export const information = [
     {
@@ -87,7 +86,6 @@ export const information = [
   ]
 
 
-=======
 export const datalion = [
     {
       id: 1,
@@ -109,4 +107,4 @@ export const datalion = [
       date: "14/02/2025",
     },
   ];
->>>>>>> 8c855f9 (fixed any things)
+
