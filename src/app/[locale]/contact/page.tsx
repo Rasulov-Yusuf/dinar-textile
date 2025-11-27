@@ -1,9 +1,11 @@
-import React from 'react'
+import Contact from "@/components/shared/Contact";
+import HeroPattern from "@/components/shared/HeroPattern";
 
 export default function page() {
   return (
-    <div>
-      Contact page
-    </div>
-  )
+    <>
+      <HeroPattern>Kontakt</HeroPattern>
+      <Contact />
+    </>
+  );
 }

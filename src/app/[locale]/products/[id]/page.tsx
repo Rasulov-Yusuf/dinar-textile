@@ -23,7 +23,7 @@ export default function page() {
             <p className='text-sm text-[#9F9F9F] mb-2'>ML XL XXL</p>
             <p className='text-sm text-[#9F9F9F] mb-4'>Red</p>
           </div>
-          <p className='flex flex-wrap mb-9  w-[100%]  sm:w-[400px]  text-lg leading-9'> Birrangli top yuqori yoqali
+          <p className='flex flex-wrap mb-9  w-full  sm:w-[400px]  text-lg leading-9'> Birrangli top yuqori yoqali
             Yumshoq cho'zilgan mikrofiberdan yengsiz yoqali, qovurg'ali ayollar to'pi. Maxsus choksiz texnologiya mahsulotni tanaga mukammal moslashtirishga imkon beradi, yarim qo'shni siluet qomatni ta'kidlaydi.
             - elementlar yo'q
             - tik yoqa
@@ -37,7 +37,7 @@ export default function page() {
         </div>
       </div>
       <div className="w-full h-full md:h-full py-0  sm:py-10 p-0 sm:px-4">
-        <div className="  w-[100%] sm:max-w-7xl mx-auto bg-white rounded-0 sm:rounded-xl gap-7 p-10 flex flex-wrap justify-between ">
+        <div className="  w-full sm:max-w-7xl mx-auto bg-white rounded-0 sm:rounded-xl gap-7 p-10 flex flex-wrap justify-between ">
 
           <h1 className="text-[40px] font-semibold font-[Archivo] mb-8">Buyurtma</h1>
           <div>
