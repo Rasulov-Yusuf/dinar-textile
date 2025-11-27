@@ -1,4 +1,6 @@
+import { ChevronLeft } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function page({
   params,
@@ -6,18 +8,14 @@ export default async function page({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
+  console.log(id);
   return (
     <div className="mt-25">
       <div className="container flex flex-col gap-y-6 max-lg:gap-y-4">
-        <div className="flex gap-x-2">
-          <Image
-            src="/icons/news-icon2.svg"
-            alt="icon"
-            width={24}
-            height={24}
-          />
-          <p className="text-[18px] text-black">Orqaga</p>
-        </div>
+        <Link href={`/news`} className="flex items-center gap-2">
+          <ChevronLeft size={24}/>
+          <p className="text-lg">Orqaga</p>
+        </Link>
 
         <div className="flex flex-col gap-y-4">
           <h1 className="font-semibold font-archivo text-[40px] text-black max-lg:text-[28px]">

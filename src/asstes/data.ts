@@ -9,11 +9,11 @@ export const links = [
         link: 'Kompaniya',
         url: '/company'
     },
-    {
-        id: 3,
-        link: 'Fabrikalar',
-        url: '/factories'
-    },
+    // {
+    //     id: 3,
+    //     link: 'Fabrikalar',
+    //     url: '/factories'
+    // },
     {
         id: 4,
         link: 'Mahsulotlar',
@@ -39,8 +39,9 @@ export const links = [
         link: 'Buyurtma',
         url: '/orders'
     },
-]
+];
 
+<<<<<<< HEAD
 
 export const information = [
     {
@@ -86,3 +87,26 @@ export const information = [
   ]
 
 
+=======
+export const datalion = [
+    {
+      id: 1,
+      url: "/images/news-img1.png",
+      title: "Dinar ishchi tashriflari: birinchi bosqich yakunlandi",
+      date: "14/02/2025",
+    },
+    {
+      id: 2,
+      url: "/images/news-img2.png",
+      title: "Dinar ishchi tashriflari: birinchi bosqich yakunlandi",
+      date: "14/02/2025",
+    },
+
+    {
+      id: 3,
+      url: "/images/news-img2.png",
+      title: "Dinar ishchi tashriflari: birinchi bosqich yakunlandi",
+      date: "14/02/2025",
+    },
+  ];
+>>>>>>> 8c855f9 (fixed any things)
