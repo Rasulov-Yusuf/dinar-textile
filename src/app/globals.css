@@ -167,3 +167,7 @@ h6{
     @apply bg-background text-foreground;
   }
 }
+
+.active{
+  border: solid white 3px;
+}

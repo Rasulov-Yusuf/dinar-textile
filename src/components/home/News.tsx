@@ -8,8 +8,16 @@ import { datalion } from "@/asstes/data";
 
 export default function News() {
   const [ref, slider] = useKeenSlider<HTMLDivElement>({
+    breakpoints: {
+      "(min-width: 768px)": {
+        slides: {
+          perView: 2.3,
+          spacing: 16,
+        },
+      },
+    },
     slides: {
-      perView: 2.3,
+      perView: 1.5,
       spacing: 16,
     },
     loop: true,
@@ -50,7 +58,7 @@ export default function News() {
           </div>
         </div>
 
-        <div ref={ref} className="keen-slider mt-6 hidden! md:flex!">
+        <div ref={ref} className="keen-slider mt-6">
           {datalion.map((data) => (
             <div key={data.id} className="keen-slider__slide">
               <NewsCard data={data} />

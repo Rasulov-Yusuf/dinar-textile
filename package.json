@@ -16,16 +16,12 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "keen-slider": "^6.8.6",
-    "leaflet": "^1.9.4",
     "lucide-react": "^0.554.0",
-    "maplibre-gl": "^5.13.0",
     "next": "15.3.5",
     "next-intl": "^4.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
-    "react-leaflet": "^5.0.0",
-    "react-map-gl": "^8.1.0",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
