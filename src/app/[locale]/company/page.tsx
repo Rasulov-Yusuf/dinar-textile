@@ -2,6 +2,7 @@ import AboutComponent from "@/components/company/AboutComponent";
 import CompanyMission from "@/components/company/CompanyMission";
 import CompanySertificates from "@/components/company/CompanySertificates";
 import CompanyStatistics from "@/components/company/CompanyStatistics";
+import Factories from "@/components/company/Factories";
 import HeroPattern from "@/components/shared/HeroPattern";
 
 
@@ -18,6 +19,8 @@ export default function page() {
       <CompanyMission />
 
       <CompanySertificates/>
+
+      <Factories/>
     </>
   );
 }

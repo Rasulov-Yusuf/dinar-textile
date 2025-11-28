@@ -1,5 +1,4 @@
-import Image from "next/image";
-import React from "react";
+import SertificateDialog from "./SertificateDialog";
 
 export default function CompanySertificates() {
   const dataji2 = [
@@ -17,7 +16,7 @@ export default function CompanySertificates() {
     },
   ];
   return (
-    <section className="mt-[100px]">
+    <section className="mt-25">
       <div className="container">
         <div className="flex flex-col gap-y-6 pb-6">
           <h3 className="text-4xl font-archivo font-semibold  max-md:text-[27px]">
@@ -28,14 +27,11 @@ export default function CompanySertificates() {
             {dataji2.map((data) => (
               <div
                 key={data.id}
-                className="flex justify-center items-center bg-white rounded-2xl py-6"
+                className="flex justify-center items-center bg-white rounded-fn w-100 h-[450px] py-5.5 px-13"
               >
-                <Image
-                  src={data.image}
-                  width={284}
-                  height={405}
-                  alt="certificate"
-                />
+                <div className="relative w-full h-full">
+                  <SertificateDialog data={data}/>
+                </div>
               </div>
             ))}
           </div>
