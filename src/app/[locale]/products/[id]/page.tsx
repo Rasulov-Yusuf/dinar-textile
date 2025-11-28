@@ -1,45 +1,112 @@
 import React from 'react'
-import Image from 'next/image'
+
 import Link from 'next/link'
 
 
 export default function page() {
   return (
-    <div>
-      <div className='h-full sm:h-screen font-[Archivo] flex items-center flex-wrap justify-center gap-0 sm:gap-4 '>
-        <div>
-          <Image
-            src="/images/Speeds.png"
-            width={606}
-            height={600}
-            alt="Some image"
-            className="rounded-xl object-cover"
+
+    <div className="w-full mt-16">
+
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-10">
+
+
+        <div className="bg-white p-8 rounded-2xl shadow-sm">
+          <h2 className="text-3xl font-bold mb-4 text-gray-900">
+            Tayyor trikotaj kiyimlar
+          </h2>
+
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Dinar kompaniyasi ayollar va erkaklar uchun trikotaj kiyimlarning
+            keng assortimentini taklif etadi: ichki kiyim va futbolkalardan
+            tortib xudi va svitshotlarga qadar. Shuningdek, biz bolalar
+            kiyimlariga ixtisoslashganmiz, jumladan, bodilar, sliplar, galqoplar,
+            kombinezonlar, pastki ko‘ylaklar, tagliklar va boshqalar.
+
+            Barcha mahsulotlarimiz zamonaviy ishlab chiqarish texnologiyalaridan
+            foydalangan holda yuqori sifatli materiallardan tayyorlangan. Biz eng
+            so‘nggi moda tendensiyalariga rioya qilamiz va har kuni uchun zamonaviy
+            va qulay narsalarni taklif qilamiz.
+          </p>
+
+
+          <button className="flex items-center gap-2 bg-[#CD333A] text-white px-6 py-3 rounded-full hover:bg-red-700 transition">
+            <span className="text-xl">
+              <img src="/icons/pdfIcon.svg" alt="pdf" />
+            </span>
+            PDF yuklab olish
+          </button>
+        </div>
+
+
+        <div className="rounded-2xl overflow-hidden shadow-sm">
+          <img
+            src="/images/girl2.png"
+            alt="Factory Image"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className='w-auto sm:min-w-[608px] h-full  sm:h-auto px-10 bg-white py-8 rounded-0   sm:rounded-2xl '>
-          <h1 className='text-[40px] font-semibold mb-4'>Birrangli top yuqori yoqali</h1>
-          <div>
-            <p className='text-lg mb-2'>4142</p>
-            <p className='text-sm text-[#9F9F9F] mb-2'>ML XL XXL</p>
-            <p className='text-sm text-[#9F9F9F] mb-4'>Red</p>
+      </div>
+
+      {/* --- Bottom Features Section --- */}
+      <div className="container mx-auto py-10">
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">
+          Ishlash samaradorligi
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          {/* Card 1 */}
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
+            <div className="text-3xl mb-3 ">
+              <img src="/icons/tabletIcon.svg" alt="tablet" />
+            </div>
+            <p className="text-gray-700 leading-relaxed">
+              O‘rta va yuqori darajadagi chakana sotuvchilar va tayyor mahsulotlardagi
+              brendlar ishlab chiqaruvchisi bo‘lish
+            </p>
           </div>
-          <p className='flex flex-wrap mb-9  w-full  sm:w-[400px]  text-lg leading-9'> Birrangli top yuqori yoqali
-            Yumshoq cho'zilgan mikrofiberdan yengsiz yoqali, qovurg'ali ayollar to'pi. Maxsus choksiz texnologiya mahsulotni tanaga mukammal moslashtirishga imkon beradi, yarim qo'shni siluet qomatni ta'kidlaydi.
-            - elementlar yo'q
-            - tik yoqa
-            - yengsiz model
-            - normal posadka</p>
-          <div>
-            <Link href={'/'}>
-              <button className='bg-[#CD333A] p-3.5 px-10  sm:p-5 sm:px-15 text-white text-lg rounded-[95px]'>So’rov yuborish</button>
-            </Link>
+
+          {/* Card 2 */}
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
+            <div className="text-3xl mb-3 ">
+              <img src="/icons/t-shirtIcon.svg" alt="t-shirt" />
+            </div>
+            <p className="text-gray-700 leading-relaxed">
+              Kiyim-kechak sanoati o‘rtasida hamkorlikni rivojlantirish orqali yangi
+              imkoniyatlar yaratish, innovatsiyalarni joriy etish
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
+            <div className="text-3xl mb-3 ">
+              <img src="/icons/IconIcon.svg" alt="Icons" />
+            </div>
+            <p className="text-gray-700 leading-relaxed">
+              Chakana savdogarlar va yetkazib beruvchilar birgalikda dizayn qilish
+              orqali yangi mahsulotlar yaratishlari mumkin.
+            </p>
+          </div>
+
+          {/* Card 4 */}
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
+            <div className="text-3xl mb-3 ">
+              <img src="/icons/flowerIcon.svg" alt="flower" />
+            </div>
+            <p className="text-gray-700 leading-relaxed">
+              Rejalashtirish va o‘zimizni global bozorlarga kengaytirish uchun yuqori
+              sifati yetkazib beruvchi sifatida joylashtirish.
+            </p>
           </div>
         </div>
       </div>
-      <div className="w-full h-full md:h-full py-0  sm:py-10 p-0 sm:px-4">
-        <div className="  w-full sm:max-w-7xl mx-auto bg-white rounded-0 sm:rounded-xl gap-7 p-10 flex flex-wrap justify-between ">
 
-          <h1 className="text-[40px] font-semibold font-[Archivo] mb-8">Buyurtma</h1>
+
+      <div className="container w-full h-full md:h-full py-0  sm:py-10 p-0 sm:px-4">
+        <div className="w-full sm:max-w-7xl mx-auto bg-white rounded-0 sm:rounded-xl gap-7 p-10 flex flex-wrap justify-between ">
+
+          <h2 className="text-[40px] font-semibold mb-8">Buyurtma</h2>
           <div>
             <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
@@ -109,5 +176,6 @@ export default function page() {
         </div>
       </div>
     </div>
+
   )
 }
