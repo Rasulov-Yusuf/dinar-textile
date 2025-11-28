@@ -5,7 +5,7 @@ import { Marquee } from "../ui/marquee";
 export default function Testimonials() {
   const arr = Array.from({ length: 10 }, (_, index) => index + 1);
   return (
-    <section className="pt-[60px]">
+    <section className="pt-15">
       <div className="container">
         <h2 className="mb-6 text-center font-archivo font-medium leading-[140%] text-2xl">
           Bizning hamkorlar
@@ -19,8 +19,8 @@ export default function Testimonials() {
             </div>
           ))}
         </Marquee>
-        <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-33 bg-linear-to-r"></div>
-        <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-33 bg-linear-to-l"></div>
+        <div className="from-transparent to-bg pointer-events-none absolute inset-y-0 left-0 w-33 bg-linear-to-l"></div>
+        <div className="from-transparent to-bg pointer-events-none absolute inset-y-0 right-0 w-33 bg-linear-to-r"></div>
       </div>
     </section>
   );
