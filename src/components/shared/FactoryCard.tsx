@@ -5,10 +5,9 @@ import Link from "next/link";
 export default function FactoryCard({ data }: { data: CompanyData }) {
   const { imageUrl, company, description, email, phone, id } = data;
   return (
-    <Link href={`/factories/${id}`}>
-      <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-        {/* Image area */}
-        <div className="w-full h-64 sm:h-72 md:h-80 bg-gray-100 relative">
+    <Link href={`/factories/${id}`} className="block">
+      <div className="max-w-3xl rounded-fn overflow-hidden border border-[#E1E1E1]">
+        <div className="w-full h-64 sm:h-72 md:h-80 relative">
           <Image
             src={imageUrl}
             alt={company}
@@ -17,7 +16,6 @@ export default function FactoryCard({ data }: { data: CompanyData }) {
           />
         </div>
 
-        {/* Content area */}
         <div className="p-6 md:p-8">
           <h2 className="text-xl sm:text-2xl md:text-2xl font-semibold tracking-tight mb-3">
             {company}
