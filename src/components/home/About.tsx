@@ -4,9 +4,9 @@ import React from "react";
 
 export default function About() {
   return (
-    <section id="about" className="pt-[100px]">
+    <section id="about" className="pt-25">
       <div className="container">
-        <div className="rounded-[20px] bg-[url(/images/company.png)] bg-cover bg-no-repeat pt-[172px] p-3 md:p-5">
+        <div className="rounded-[20px] bg-[url(/images/company.png)] bg-cover bg-no-repeat pt-[172px]! p-3 md:p-5">
           <div className="bg-white p-4 md:p-8 rounded-[20px] flex flex-col max-w-[492px] gap-4">
             <h2 className="font-semibold font-archivo leading-[140%] tracking-[-1%] text-3xl md:text-4xl lg:text-[40px]">
               Kompaniya haqida
@@ -36,7 +36,7 @@ export default function About() {
             </ul>
 
             <div className="flex items-center gap-2">
-              <Link href={"/company"} className="flex items-center gap-[6px] text-white bg-red py-6 px-11 rounded-full mt-6">Batafsil ma'lumot <ChevronRight /></Link>
+              <Link href={"/company"} className="flex items-center gap-1.5 text-white bg-red py-6 px-11 rounded-full mt-6">Batafsil ma'lumot <ChevronRight /></Link>
               
             </div>
           </div>

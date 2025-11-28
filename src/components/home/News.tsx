@@ -4,18 +4,27 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useKeenSlider } from "keen-slider/react";
 import NewsCard from "../shared/NewsCard";
+import { datalion } from "@/asstes/data";
 
 export default function News() {
   const [ref, slider] = useKeenSlider<HTMLDivElement>({
+    breakpoints: {
+      "(min-width: 768px)": {
+        slides: {
+          perView: 2.3,
+          spacing: 16,
+        },
+      },
+    },
     slides: {
-      perView: 2.2,
+      perView: 1.5,
       spacing: 16,
     },
     loop: true,
   });
 
   return (
-    <section id="news-section" className="mt-[100px]">
+    <section id="news-section" className="mt-25">
       <div className="container">
         <div className="flex items-center gap-4 justify-between flex-wrap">
           <div className="flex items-center gap-4">
@@ -24,7 +33,7 @@ export default function News() {
             </h2>
             <div>
               <Link
-                href={"/"}
+                href={"/news"}
                 className="flex items-center py-3 px-5 cursor-pointer border rounded-full border-black hover:bg-red hover:text-white hover:border-white duration-300"
               >
                 Barchasi <ChevronRight size={20} />
@@ -50,18 +59,11 @@ export default function News() {
         </div>
 
         <div ref={ref} className="keen-slider mt-6">
-          <div className="keen-slider__slide">
-            <NewsCard />
-          </div>
-          <div className="keen-slider__slide">
-            <NewsCard />
-          </div>
-          <div className="keen-slider__slide">
-            <NewsCard />
-          </div>
-          <div className="keen-slider__slide">
-            <NewsCard />
-          </div>
+          {datalion.map((data) => (
+            <div key={data.id} className="keen-slider__slide">
+              <NewsCard data={data} />
+            </div>
+          ))}
         </div>
       </div>
     </section>

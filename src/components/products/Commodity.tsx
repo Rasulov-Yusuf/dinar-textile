@@ -1,7 +1,7 @@
-import { FilterByGen } from "@/components";
 import Image from "next/image";
 import Link from "next/link";
 import girlImage from '@/../public/images/girl.png'
+import FilterByGen from "./FilterByGen";
 
 export default function Commodity() {
   const product = [

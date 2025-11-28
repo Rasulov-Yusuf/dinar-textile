@@ -1,9 +1,9 @@
-import { HeroBanner } from "@/components";
+import HeroPattern from "@/components/shared/HeroPattern";
 
 export default function page() {
   return (
     <>
-      <HeroBanner>Fabrikalar</HeroBanner>
+      <HeroPattern>Fabrikalar</HeroPattern>
     </>
   )
 }
