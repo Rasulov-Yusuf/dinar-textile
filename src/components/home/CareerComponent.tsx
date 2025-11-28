@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function CareerComponent() {
   return (
-    <section id="about" className="pt-[100px]">
+    <section id="about" className="pt-25">
       <div className="container">
         <div className="flex items-center gap-4 flex-wrap">
-          <h2 className="font-semibold font-archivo leading-[140%] tracking-[-1%] text-3xl md:text-4xl lg:text-[40px]">
+          <h2 className="font-semibold leading-[140%] tracking-[-1%] text-3xl md:text-4xl lg:text-[40px]">
             Vakansiyalar
           </h2>
           <Link
@@ -17,7 +17,7 @@ export default function CareerComponent() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-15">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
           <div className="bg-white bg-[url('/images/Union.png')] bg-center rounded-fn py-6 px-2 sm:px-6">
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-1">
