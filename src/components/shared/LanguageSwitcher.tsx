@@ -22,21 +22,25 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <Select
-      value={locale}
-      onValueChange={(value) => handleLanguageChange(value)}
-    >
-      <SelectTrigger className="w-min border-none text-black shadow-none px-0">
-        <SelectValue placeholder="Language" />
-      </SelectTrigger>
+    <>
+      <Select
+        value={locale}
+        onValueChange={(value) => handleLanguageChange(value)}
+      >
+        <SelectTrigger className="w-min border-none shadow-none focus:outline-none! focus-visible:right-0 px-0 [&_svg]:size-5! [&_svg]:text-[#000]! cursor-pointer! ">
+          <SelectValue placeholder="Language" />
+        </SelectTrigger>
 
-      <SelectContent className="mt-2">
-        {["uz", "en", "ru"].map((lang) => (
-          <SelectItem key={lang} value={lang}>
-            {lang.toUpperCase()}
-          </SelectItem>
-        ))}
-      </SelectContent>
-    </Select>
+        <SelectContent
+          className="outline-0 cursor-pointer! mt-2!"
+        >
+          {["uz", "en", "ru"].map((lang) => (
+            <SelectItem key={lang} value={lang} className="cursor-pointer!">
+              {lang.toUpperCase()}
+            </SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
+    </>
   );
 }

@@ -15,7 +15,7 @@ export default function Searchbar() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant={"ghost"} className="px-0!">
+        <Button variant={"ghost"} className="px-0! hover:bg-transparent cursor-pointer">
           <Search className="size-6" />
         </Button>
       </DialogTrigger>

@@ -1,16 +1,16 @@
-import React from "react";
 import Logo from "./Logo";
 import { links } from "@/asstes/data";
 import Link from "next/link";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Searchbar from "./Searchbar";
+import NavLink from "./NavLink";
 
 export default function Navbar() {
   return (
     <nav className="fixed w-full z-50">
       <div className="container">
         <div className="bg-white py-4 px-2 xl:px-4 rounded-b-fn flex items-center justify-between">
-          <div className="">
+          <div>
             <Logo />
           </div>
 
@@ -18,7 +18,7 @@ export default function Navbar() {
             {links.map((link) => {
               return (
                 <li key={link.id}>
-                  <Link href={link.url}>{link.link}</Link>
+                  <NavLink href={link.url} label={link.link}/>
                 </li>
               );
             })}

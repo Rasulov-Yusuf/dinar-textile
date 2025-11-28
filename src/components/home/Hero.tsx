@@ -1,12 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import play from "../../../public/icons/play.svg";
+import VideoDialog  from "../shared/VideoDialog";
 
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="bg-[url('/images/hero.png')] bg-cover py-[50px] min-h-screen flex items-end"
+      className="bg-[url('/images/hero.png')] bg-cover py-[50px] h-[720px] flex items-end"
     >
       <div className="container">
         <div className="flex flex-col items-start gap-8">
@@ -20,12 +18,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="bg-white rounded-full py-4 px-9  cursor-pointer flex items-center gap-2">
-            <Image src={play} alt="play btn" />
-            <Link href={"/video"} className="h-full">
-              Video ko'rish
-            </Link>
-          </div>
+          <VideoDialog />
         </div>
       </div>
     </section>
