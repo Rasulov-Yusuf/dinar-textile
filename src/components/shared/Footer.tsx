@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className="bg-red text-white pt-[30px] mt-[100px]">
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between grow gap-4">
+          <div className="flex flex-col justify-between grow gap-4 basis-[615px]">
             <div>
               <Image src={logo} alt="footer logo" />
             </div>
@@ -25,7 +25,7 @@ export default function Footer() {
               </ul>
               <ul className="flex flex-col gap-2.5">
                 <li className="opacity-60">Manzil</li>
-                <li>Toshkent shahridagi, Amir Temur ko'chasi, 45-uy.</li>
+                <li className="w-[200px]">Toshkent shahridagi, Amir Temur ko'chasi, 45-uy.</li>
               </ul>
               <ul className="flex flex-col gap-2.5">
                 <li className="opacity-60">Elektron manzil</li>
@@ -34,7 +34,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex justify-between flex-wrap sm:flex-nowrap grow gap-5">
+          <div className="flex justify-end flex-wrap sm:flex-nowrap grow gap-5 sm:gap-10 md:gap-29">
             <ul className="flex flex-col gap-[18px]">
               {links.map((link) => (
                 <li key={link.id}>{link.link}</li>
