@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 export default function AboutComponent() {
   return (
@@ -63,13 +62,14 @@ export default function AboutComponent() {
             </div>
           </div>
 
-          <div>
-            <Image
-              src="/images/company-img1.png"
-              width={1300}
-              height={200}
-              alt="hello"
-            />
+          <div className="overflow-hidden rounded-b-fn h-[690px]">
+            <iframe
+              src={'https://www.youtube-nocookie.com/embed/QJyYhNGA6A8?si=pCZa3LdGHmCxFvFZ'}
+              title="Video player"
+              className="size-full rounded-b-fn"
+              allowFullScreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
           </div>
         </article>
       </div>
