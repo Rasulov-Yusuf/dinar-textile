@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
+import InitAOS from "@/components/shared/InitAOS";
 
 const archivo = Archivo({
   variable: "--font-roboto",
@@ -39,6 +40,7 @@ export default async function LocaleLayout({
         className={`${archivo.variable} ${inter.variable} antialiased min-h-screen flex flex-col`}
       >
         <NextIntlClientProvider>
+          <InitAOS />
           <Header />
           <main className="grow">{children}</main>
           <Footer />

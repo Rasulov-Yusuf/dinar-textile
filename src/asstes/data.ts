@@ -134,3 +134,6 @@ export const factoryData = [
     imageUrl: factoryImage,
   },
 ];
+
+
+// career data

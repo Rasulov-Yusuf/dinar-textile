@@ -7,7 +7,7 @@ export default function About() {
     <section id="about" className="pt-25">
       <div className="container">
         <div className="rounded-[20px] bg-[url(/images/company.png)] bg-cover bg-no-repeat pt-[172px]! p-3 md:p-5">
-          <div className="bg-white p-4 md:p-8 rounded-[20px] flex flex-col max-w-[492px] gap-4">
+          <div data-aos="zoom-in-right" className="bg-white p-4 md:p-8 rounded-[20px] flex flex-col max-w-[492px] gap-4">
             <h2 className="font-semibold font-archivo leading-[140%] tracking-[-1%] text-3xl md:text-4xl lg:text-[40px]">
               Kompaniya haqida
             </h2>

@@ -68,7 +68,7 @@ export default function GalleryCarousel() {
   return (
     <section className="mt-25">
       <div className="container flex flex-col relative">
-        <div ref={sliderRef} className="keen-slider h-[700px] rounded-fn">
+        <div data-aos='zoom-in' ref={sliderRef} className="keen-slider h-[700px] rounded-fn">
           <div className="keen-slider__slide number-slide1 relative">
             <Image src={galleryImage} alt="asdfasdfa" />
           </div>
@@ -85,23 +85,33 @@ export default function GalleryCarousel() {
           className="keen-slider thumbnail h-25 bottom-7.5 flex items-center justify-center absolute!"
         >
           <Button
+          data-aos='zoom-in'
+          data-aos-delay='100'
             onClick={() => instanceRef.current?.prev()}
             className="rounded-full bg-white text-black cursor-pointer hover:bg-white h-full flex items-center justify-center mr-3"
           >
             <ChevronLeft className="size-6.5" />
           </Button>
 
-          <div className="keen-slider__slide number-slide1 h-full w-25! rounded-fn">
+          <div
+          data-aos='zoom-in'
+          data-aos-delay='200' className="keen-slider__slide number-slide1 h-full w-25! rounded-fn">
             <Image src={galleryImage} alt="" />
           </div>
-          <div className="keen-slider__slide number-slide2 h-full w-25! rounded-fn">
+          <div
+          data-aos='zoom-in'
+          data-aos-delay='300' className="keen-slider__slide number-slide2 h-full w-25! rounded-fn">
             <Image src={galleryImage} alt="" />
           </div>
-          <div className="keen-slider__slide number-slide3 w-25! h-full rounded-fn">
+          <div
+          data-aos='zoom-in'
+          data-aos-delay='400' className="keen-slider__slide number-slide3 w-25! h-full rounded-fn">
             <Image src={galleryImage} alt="" />
           </div>
 
           <Button
+          data-aos='zoom-in'
+          data-aos-delay='500'
             onClick={() => instanceRef.current?.next()}
             className="rounded-full bg-white text-black cursor-pointer hover:bg-white h-full flex items-center justify-center ml-8"
           >

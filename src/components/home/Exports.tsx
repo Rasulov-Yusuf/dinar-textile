@@ -36,22 +36,22 @@ const countries = [
 
 export default function Exports() {
   return (
-    <section id="export" className="mt-[100px]">
+    <section id="export" className="mt-25">
       <div className="container">
         <div className="bg-yellow rounded-fn py-[50px] px-4 md:px-8 flex flex-col items-center">
-          <h2 className="font-semibold font-archivo leading-[140%] tracking-[-1%] text-3xl md:text-4xl lg:text-[40px] text-white">
+          <h2 data-aos='fade-up' className="font-semibold font-archivo leading-[140%] tracking-[-1%] text-3xl md:text-4xl lg:text-[40px] text-white">
             Eksport qiladigan davlatlarimiz
           </h2>
 
           <ul className="flex items-center gap-2 mt-6 flex-wrap ">
             {countries.map((country) => (
-              <li key={country.id}>
+              <li data-aos='fade-up' data-aos-delay={50*country.id} key={country.id}>
                 <Button className="rounded-full bg-white text-black hover:bg-white">{country.country}</Button>
               </li>
             ))}
           </ul>
 
-          <div className="mt-[50px]">
+          <div className="mt-12.5">
             <Image src={exportImage} alt="export map image" />
           </div>
         </div>

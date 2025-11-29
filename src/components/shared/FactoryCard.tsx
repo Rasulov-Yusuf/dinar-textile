@@ -5,7 +5,12 @@ import Link from "next/link";
 export default function FactoryCard({ data }: { data: CompanyData }) {
   const { imageUrl, company, description, email, phone, id } = data;
   return (
-    <Link href={`/factories/${id}`} className="block">
+    <Link
+      data-aos="zoom-in"
+      data-aos-delay={data.id * 100}
+      href={`/factories/${id}`}
+      className="block"
+    >
       <div className="max-w-3xl rounded-fn overflow-hidden border border-[#E1E1E1]">
         <div className="w-full h-64 sm:h-72 md:h-80 relative">
           <Image

@@ -47,16 +47,21 @@ export default function Commodity() {
     <section className="mt-[100px]">
       <div className="container">
         <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-semibold font-archivo sm:text-[40px]">
+          <h2 data-aos='fade-up' className="text-2xl font-semibold font-archivo sm:text-[40px]">
             Mahsulotlarimiz
           </h2>
 
-          <FilterByGen />
+          <div data-aos='fade-up' data-aos-delay='100'>
+            <FilterByGen />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-6 mt-6">
           {product.map((item, index) => (
-            <div key={index}>
+            <div
+            data-aos='zoom-in'
+            data-aos-delay={index*100}
+            key={index}>
               <Link href={`/products/${item.id}`}>
                 <div className="rounded-fn overflow-hidden">
                   <Image src={girlImage} alt="desc" className="w-full object-cover"/>

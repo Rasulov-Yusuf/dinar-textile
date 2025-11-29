@@ -29,10 +29,10 @@ export default function News() {
       <div className="container">
         <div className="flex items-center gap-4 justify-between flex-wrap">
           <div className="flex items-center gap-4">
-            <div>
+            <div data-aos="fade-up">
               <Heading2>Yangiliklar</Heading2>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
               <Link
                 href={"/news"}
                 className="flex items-center py-3 px-5 cursor-pointer border rounded-full border-black hover:bg-red hover:text-white hover:border-white duration-300"
@@ -44,6 +44,8 @@ export default function News() {
 
           <div className="flex items-center gap-2">
             <Button
+              data-aos="fade-up"
+              data-aos-delay="100"
               onClick={() => slider.current?.prev()}
               className="rounded-full bg-white text-black cursor-pointer hover:text-white hover:bg-red px-7! py-5!"
             >
@@ -51,6 +53,8 @@ export default function News() {
             </Button>
 
             <Button
+              data-aos="fade-up"
+              data-aos-delay="200"
               onClick={() => slider.current?.next()}
               className="rounded-full bg-white text-black cursor-pointer hover:text-white hover:bg-red px-7! py-5!"
             >
@@ -61,8 +65,8 @@ export default function News() {
 
         <div ref={ref} className="keen-slider mt-6">
           {datalion.map((data) => (
-            <div key={data.id} className="keen-slider__slide">
-              <NewsCard data={data} />
+            <div data-aos='zoom-in' data-aos-delay={100*data.id} key={data.id} className="keen-slider__slide">
+              <NewsCard data={data}/>
             </div>
           ))}
         </div>

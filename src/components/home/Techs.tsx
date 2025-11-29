@@ -1,16 +1,20 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import Heading2 from "../shared/Heading2";
 
 export default function Techs() {
   return (
     <section id="about" className="pt-[100px]">
       <div className="container">
-        <h2 className="font-semibold font-archivo leading-[140%] tracking-[-1%] text-3xl md:text-4xl lg:text-[40px]">
-          Ishlab chiqarish texnologiyalari
-        </h2>
+        <div data-aos="fade-up">
+          <Heading2>Ishlab chiqarish texnologiyalari</Heading2>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
-          <div className="bg-[url(/images/products1.png)] bg-cover bg-center rounded-fn h-[500px] grow flex items-end px-4 md:px-8 py-4">
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            className="bg-[url(/images/products1.png)] bg-cover bg-center rounded-fn h-[500px] grow flex items-end px-4 md:px-8 py-4"
+          >
             <div className="rounded-fn bg-white flex grow">
               <Link
                 href={"/"}
@@ -20,7 +24,11 @@ export default function Techs() {
               </Link>
             </div>
           </div>
-          <div className="bg-[url(/images/products1.png)] bg-cover bg-center rounded-fn h-[500px] grow flex items-end px-4 md:px-8 py-4">
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            className="bg-[url(/images/products1.png)] bg-cover bg-center rounded-fn h-[500px] grow flex items-end px-4 md:px-8 py-4"
+          >
             <div className="rounded-fn bg-white flex grow">
               <Link
                 href={"/"}
@@ -31,7 +39,11 @@ export default function Techs() {
             </div>
           </div>
 
-          <div className="bg-[url(/images/products1.png)] bg-cover bg-center rounded-fn h-[500px] grow flex items-end px-4 md:px-8 py-4">
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            className="bg-[url(/images/products1.png)] bg-cover bg-center rounded-fn h-[500px] grow flex items-end px-4 md:px-8 py-4"
+          >
             <div className="rounded-fn bg-white flex grow">
               <Link
                 href={"/"}

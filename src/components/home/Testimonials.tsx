@@ -7,7 +7,7 @@ export default function Testimonials() {
   return (
     <section className="pt-15">
       <div className="container">
-        <h2 className="mb-6 text-center font-archivo font-medium leading-[140%] text-2xl">
+        <h2 data-aos="fade-up" className="mb-6 text-center font-medium leading-[140%] text-2xl">
           Bizning hamkorlar
         </h2>
       </div>

@@ -9,7 +9,7 @@ export function Careerscomponts() {
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-15">
           {information.map((item) => (
-            <div key={item.id} className="bg-white bg-[url('/images/Union.png')] bg-center rounded-fn py-6 px-2 sm:px-6">
+            <div data-aos='zoom-in' data-aos-delay={100*item.id} key={item.id} className="bg-white bg-[url('/images/Union.png')] bg-center rounded-fn py-6 px-2 sm:px-6">
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-1">
                   <h3 className="leading-[140%] tracking-[-1%] text-2xl md:text-2xl lg:text-2xl">{item.name}</h3>

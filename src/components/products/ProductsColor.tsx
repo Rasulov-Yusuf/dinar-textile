@@ -51,12 +51,15 @@ export default function ProductsColor() {
   ];
 
   return (
-    <section className="mt-[100px]">
+    <section className="mt-25">
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-6">
           {Color.map((item, index) => {
             return (
-              <div key={index} className="rounded-fn">
+              <div
+              data-aos='zoom-in'
+              data-aos-delay={index*50}
+              key={index} className="rounded-fn">
                 <div
                   className={`h-[140px] border border-[#DDDDDD] inset-shadow-[0,0,15px,black/20]`}
                   style={{ backgroundColor: item.color }}

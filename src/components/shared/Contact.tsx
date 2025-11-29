@@ -5,7 +5,10 @@ export default function Contact() {
     <section className="mt-25">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-          <div className="map col-span-3 rounded-fn bg-white overflow-hidden">
+          <div
+            data-aos="zoom-in"
+            className="map col-span-3 rounded-fn bg-white overflow-hidden"
+          >
             <div>
               <iframe
                 className="border-0! w-full"
@@ -38,7 +41,11 @@ export default function Contact() {
               </ul>
             </div>
           </div>
-          <div className="bg-white rounded-fn py-[30px] px-4 sm:px-[30px] col-span-2">
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            className="bg-white rounded-fn py-[30px] px-4 sm:px-[30px] col-span-2"
+          >
             <h3 className="font-archivo leading-[100%] tracking-[-1%] font-semibold text-[32px]">
               Arizangizni yuboring
             </h3>

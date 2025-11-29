@@ -3,7 +3,6 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
@@ -16,7 +15,6 @@ export default function FilterByGen() {
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
-          {/* <SelectLabel>Fruits</SelectLabel> */}
           <SelectItem value="apple">Erkaklar</SelectItem>
         </SelectGroup>
       </SelectContent>

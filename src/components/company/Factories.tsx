@@ -26,12 +26,14 @@ export default function Factories() {
     <section className="mt-25">
       <div className="container">
         <div className="flex items-center gap-4 justify-between flex-wrap">
-          <div>
+          <div data-aos="fade-up">
             <Heading2>Fabrikalar</Heading2>
           </div>
 
           <div className="flex items-center gap-2">
             <Button
+              data-aos="fade-up"
+              data-aos-delay="100"
               onClick={() => slider.current?.prev()}
               className="rounded-full bg-white text-black cursor-pointer hover:text-white hover:bg-red px-7! py-5!"
             >
@@ -39,6 +41,8 @@ export default function Factories() {
             </Button>
 
             <Button
+              data-aos="fade-up"
+              data-aos-delay="200"
               onClick={() => slider.current?.next()}
               className="rounded-full bg-white text-black cursor-pointer hover:text-white hover:bg-red px-7! py-5!"
             >

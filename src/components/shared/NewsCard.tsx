@@ -7,7 +7,7 @@ import { newsCardType } from "@/asstes/types";
 export default function NewsCard({data}:{data: newsCardType}) {
   const {url, date, title, id} = data
   return (
-    <div>
+    <div data-aos='zoom-in' data-aos-delay={+id*100}>
       <div className="relative h-[353px] rounded-fn">
         <Image src={url} alt={title} fill/>
       </div>

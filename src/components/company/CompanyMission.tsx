@@ -1,16 +1,16 @@
 import Image from "next/image";
-import React from "react";
+import Heading2 from "../shared/Heading2";
 
 export default function CompanyMission() {
   return (
     <section className="mt-[100px]">
       <div className="container">
         <div className="flex flex-col gap-y-6">
-          <h2 className="text-4xl font-archivo font-semibold  max-md:text-[27px]">
+          <h2 data-aos='fade-up' className="text-4xl font-archivo font-semibold  max-md:text-[27px]">
             Missiya va qadriyatlar
           </h2>
           <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
-            <div className="bg-yellow rounded-2xl bg-[url(/images/company-img4.png)] bg-bottom-right bg-no-repeat">
+            <div data-aos='zoom-in' data-aos-delay='100' className="bg-yellow rounded-2xl bg-[url(/images/company-img4.png)] bg-bottom-right bg-no-repeat">
               <div className="flex flex-col gap-y-6 p-7">
                 <div className="flex gap-x-3 border-b border-[#e0e0e085] pb-5">
                   <Image
@@ -39,7 +39,8 @@ export default function CompanyMission() {
                 </p>
               </div>
             </div>
-            <div className="bg-yellow rounded-2xl bg-[url(/images/company-img4.png)] bg-bottom-right bg-no-repeat">
+
+            <div data-aos='zoom-in' data-aos-delay='200' className="bg-yellow rounded-2xl bg-[url(/images/company-img4.png)] bg-bottom-right bg-no-repeat">
               <div className="flex flex-col gap-y-6 p-7">
                 <div className="flex gap-x-3 border-b border-[#e0e0e085] pb-5">
                   <Image

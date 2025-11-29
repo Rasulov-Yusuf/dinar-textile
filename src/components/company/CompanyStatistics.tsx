@@ -41,7 +41,7 @@ export default function CompanyStatistics() {
     <section className="mt-[100px]">
       <div className="container">
         <div className="flex flex-col gap-y-6">
-          <div>
+          <div data-aos='fade-up'>
             <h2 className="font-semibold text-[40px] max-lg:text-4xl max-md:text-3xl">
               Statistikalar
             </h2>
@@ -49,6 +49,8 @@ export default function CompanyStatistics() {
           <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
             {dataji.map((data) => (
               <div
+              data-aos='zoom-in'
+              data-aos-delay={data.id * 100}
                 key={data.id}
                 className={`${
                   data.id % 2 === 0

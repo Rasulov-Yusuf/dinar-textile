@@ -1,16 +1,19 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import Heading2 from "../shared/Heading2";
 
 export default function CareerComponent() {
   return (
     <section id="about" className="pt-25">
       <div className="container">
         <div className="flex items-center gap-4 flex-wrap">
-          <h2 className="font-semibold leading-[140%] tracking-[-1%] text-3xl md:text-4xl lg:text-[40px]">
-            Vakansiyalar
-          </h2>
+          <div data-aos='fade-up'>
+            <Heading2>Vakansiyalar</Heading2>
+          </div>
           <Link
-            href={"/"}
+          data-aos='fade-up' 
+          data-aos-delay='100'
+            href={"/careers"}
             className="flex items-center py-3 px-5 cursor-pointer border rounded-full text-black"
           >
             Barchasi <ChevronRight size={20} />
@@ -18,7 +21,7 @@ export default function CareerComponent() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
-          <div className="bg-white bg-[url('/images/Union.png')] bg-center rounded-fn py-6 px-2 sm:px-6">
+          <div data-aos='zoom-in' data-aos-delay='100' className="bg-white bg-[url('/images/Union.png')] bg-center rounded-fn py-6 px-2 sm:px-6">
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-1">
                 <h3 className="leading-[140%] tracking-[-1%] text-3xl md:text-4xl lg:text-[40px]">
@@ -44,7 +47,8 @@ export default function CareerComponent() {
               </Link>
             </div>
           </div>
-          <div className="bg-white bg-[url('/images/Union.png')] bg-center rounded-fn py-6 px-2 sm:px-6">
+
+          <div data-aos='zoom-in' data-aos-delay='200' className="bg-white bg-[url('/images/Union.png')] bg-center rounded-fn py-6 px-2 sm:px-6">
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-1">
                 <h3 className="leading-[140%] tracking-[-1%] text-3xl md:text-4xl lg:text-[40px]">
@@ -70,7 +74,8 @@ export default function CareerComponent() {
               </Link>
             </div>
           </div>
-          <div className="bg-white bg-[url('/images/Union.png')] bg-center rounded-fn py-6 px-2 sm:px-6">
+
+          <div data-aos='zoom-in' data-aos-delay='300' className="bg-white bg-[url('/images/Union.png')] bg-center rounded-fn py-6 px-2 sm:px-6">
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-1">
                 <h3 className="leading-[140%] tracking-[-1%] text-3xl md:text-4xl lg:text-[40px]">
@@ -96,6 +101,7 @@ export default function CareerComponent() {
               </Link>
             </div>
           </div>
+
         </div>
       </div>
     </section>
