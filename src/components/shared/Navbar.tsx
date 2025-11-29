@@ -4,6 +4,7 @@ import Link from "next/link";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Searchbar from "./Searchbar";
 import NavLink from "./NavLink";
+import Orders from "../order/Orders";
 
 export default function Navbar() {
   return (
@@ -22,6 +23,7 @@ export default function Navbar() {
                 </li>
               );
             })}
+            <Orders/>
           </ul>
 
           <div className="flex items-center gap-4">

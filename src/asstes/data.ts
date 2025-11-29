@@ -34,11 +34,11 @@ export const links = [
     link: "Vakansiyalar",
     url: "/careers",
   },
-  {
-    id: 8,
-    link: "Buyurtma",
-    url: "/orders",
-  },
+  // {
+  //   id: 8,
+  //   link: "Buyurtma",
+  //   url: "/orders",
+  // },
 ];
 
 export const information = [

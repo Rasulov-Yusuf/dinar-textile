@@ -6,6 +6,8 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Searchbar from "./Searchbar";
+import Orders from "../order/Orders";
+import NavLink from "./NavLink";
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -38,13 +40,18 @@ export default function Sidebar() {
             <ul className={`flex flex-col gap-3 text-lg`}>
               {links.map((link) => {
                 return (
-                  <li key={link.id}>
-                    <Link href={link.url} onClick={toggleMenu}>
+                  <li key={link.id} onClick={toggleMenu}>
+                    {/* <Link href={link.url} >
                       {link.link}
-                    </Link>
+                    </Link> */}
+                    <NavLink href={link.url} label={link.link} />
                   </li>
                 );
               })}
+
+              <div className="flex items-center justify-start">
+                <Orders />
+              </div>
             </ul>
 
             <div className="flex">
